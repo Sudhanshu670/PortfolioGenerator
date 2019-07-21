@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    
+    
+</head>
+<body>   
+
+        <nav>
+                <div class="nav-wrapper">
+                  <a href="{% url 'index' %}" class="brand-logo center">Portfolio</a>
+                  <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="{% url 'project' %}">Projects</a></li>
+                    <li><a href="{% url 'languages' %}">Languages</a></li>
+                    <li><a href="{% url 'education' %}">Education</a></li>
+                    <li><a href="{% url 'achievements' %}">Achievements</a></li>
+                  </ul>
+                </div>
+              </nav>
+<div class="container">
+               
+  {% block content %} 
+  
+  
+
+  {% endblock %}
+</div> 
+    
+</body>
+</html>
