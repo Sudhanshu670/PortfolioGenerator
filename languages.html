@@ -1,0 +1,30 @@
+{% extends 'main/layouts/base.html' %}
+{% block content %}
+<div class="container">
+    <h1 class="center-align">LANGUAGES I HAVE DONE🙌</h1>
+    <div class="row">
+   
+      <ul class="collection">
+            {% for l in lang %}
+                 <li class="collection-item">{{ l }}</li>
+            {% endfor %}    
+            
+      </ul>
+
+    </div>
+</div>
+<footer class="page-footer">
+    <div class="container">
+      
+        
+            <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons"></i></a></li>
+                <li class="active"><a href="{% url 'project' %}">1</a></li>
+                <li class="waves-effect"><a href="{% url 'languages' %}">2</a></li>
+                <li class="waves-effect"><a href="{% url 'education' %}">3</a></li>
+                <li class="waves-effect"><a href="{% url 'achievements' %}">4</a></li>
+                
+         
+  </footer>
+      
+{% endblock %}
